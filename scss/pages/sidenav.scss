@@ -1,0 +1,35 @@
+.sidenav {
+    width: 175px;
+    height: 50vh;
+    position: fixed;
+    z-index: 1;
+    top: 15vh;
+    left: 0;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    padding: 2em;
+    line-height: 1.65;
+    background-color: $transparent_black_light;
+    animation: fadein .5s;
+
+    @include respond(900px){
+      visibility: hidden;
+    }
+  }
+  
+  .sidenav-indent {
+    display: flex;
+    flex-direction: column;
+    padding-left: 40px;
+  }
+  
+  .sidenav-indent > a {
+    color: rgb(142, 131, 170);
+  }
+  
+  .sidenav a {
+    color: rgb(73, 45, 139);
+    text-decoration: none;
+  }
+  

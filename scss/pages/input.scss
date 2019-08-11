@@ -1,0 +1,33 @@
+input {
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  background-color: rgb(243, 238, 245);
+  border-radius: 2px;
+  text-align: center;
+  transition: background-color 1s ease-in-out;
+}
+
+input:focus {
+  outline: none;
+
+  background-color: rgb(177, 164, 202);
+
+  color: rgb(73, 45, 139);
+  border: none;
+  transition: background-color 1s ease-in-out;
+}
+
+input:valid {
+  color: rgb(73, 45, 139);
+
+}
+
+.invalid-input {
+  visibility: visible;
+  color: rgb(255, 91, 91);
+}
+
+.valid-input {
+  visibility: hidden;
+}
