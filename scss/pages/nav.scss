@@ -29,7 +29,7 @@
   @include respond(1150px){
     margin-right: .5em;
     font-size: .75em;
-    font-weight: 100;
+    font-weight: 200;
   
     h1{
       font-size: 1.5em;
@@ -37,7 +37,9 @@
   }
 
   @include respond(340px){
+
     font-size: .55em;
+    
     h1{
       font-size: 2em;
     }
@@ -49,6 +51,10 @@
   align-items: center;
   z-index: 2;
 
+  @include respond(1200px){
+    font-size: .9rem;
+  }
+
   @include respond(340px){
 
     img{
@@ -58,9 +64,8 @@
 }
 
 #nav-fader {
-  width: 20vh;
+  width: 25vh;
   height: 10vh;
-  left: 10vh;
   top: 2vh;
   position: absolute;
   border-radius: 100%;
@@ -69,28 +74,78 @@
   -webkit-filter: blur(20px);
   z-index: 1;
 
-  @include respond(500px){
+  &:hover{
+    @include only(1150px){
 
-    left: 3vh;
+      background-color: black;
+      border-radius: 100%;
+      -webkit-filter: blur(20px);
+      opacity: .3;
+    }
+  }
+
+  @include only(500px){
+
+    left: 1vh;
     top: 2vh;
   }
-  @include only(1000px){
-    left: 13vh;
-    top: 2vh;
+  @include only(615px){
+    left: 6vh;
   }
-}
-
-#nav-fader:hover {
   @include only(1150px){
-
-    background-color: black;
-    border-radius: 100%;
-    -webkit-filter: blur(20px);
-    opacity: .3;
+    left: 20vh;
+    top: 2vh;
   }
 }
 
 #nav-right {
   display: flex;
   align-items: center;
+  justify-content: flex-start;
+  font-size: 1.5rem;
+
+  
+}
+
+.nav-desktop {
+
+  @include respond(800px){
+      visibility: hidden;
+  }
+}
+
+.nav-link-right {
+
+  &:hover{
+    opacity: .5;
+  }
+}
+
+.nav-projects {
+
+  @include respond(800px){
+    position: absolute;
+    right: 5vh;
+    top: 6vh
+  }
+}
+
+.nav-mobile-vulcan {
+
+  @include only(800px){
+    visibility: hidden;
+  }
+}
+
+.nav-icon-globally {
+  margin-right: 3vh;
+  margin-top: 3vh;
+  width: 6vh;
+
+  @include respond(1150px){
+    width: 4.2vh;
+    margin-top: 2.5vh;
+    margin-right: 3vh;
+    margin-left: 1vh;
+  }
 }

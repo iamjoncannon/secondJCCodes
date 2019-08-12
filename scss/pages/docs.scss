@@ -1,5 +1,5 @@
 #docs-container::-webkit-scrollbar {
-  margin-top: 8vh;
+  margin-top: 15vh;
   width: 1em;
 }
 
@@ -13,7 +13,7 @@
 }
 
 #docs-container {
-  margin-top: 8vh;
+  margin-top: 12vh;
   // overflow-y: scroll;
   // overflow-x: hidden;
 
@@ -29,8 +29,12 @@
 }
 
 #documentation-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   position: relative;
-  width: 40%;
+  width: 60%;
   left: 0;
   padding: 2em;
   margin-top: 3em;
@@ -39,7 +43,7 @@
   margin-left: auto;
   margin-right: auto;
   z-index: 0;
-  animation: fadein 2s;
+  animation: fadein 2.5s;
 
   @include respond(12450px){
     margin-top: 3em;
@@ -99,5 +103,17 @@ pre {
     white-space: -o-pre-wrap;    /* Opera 7 */
     word-wrap: break-word;       /* Internet Explorer 5.5+ */
   }
+}
+
+#docs-about-me-text {
+  font-size: 2rem;
+
+  @include respond(650px){
+    font-size: 1.5rem;
+  }
+}
+
+.docs-about-me-link {
+  color: black;
 }
 

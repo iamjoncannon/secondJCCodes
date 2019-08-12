@@ -1,6 +1,6 @@
 module.exports = {
   entry: './client/index.js',
-  mode: 'development',
+  mode: 'production',
   output: {
     path: __dirname,
     filename: './public/bundle.js'
@@ -14,6 +14,10 @@ module.exports = {
         use: {
           loader: 'babel-loader'
         }
+      },
+      {
+        test: /\.css$/i,
+        use: ['style-loader', 'css-loader'],
       }
     ]
   }

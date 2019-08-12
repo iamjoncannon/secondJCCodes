@@ -9,6 +9,8 @@
 @import "pages/nav.scss";
 @import "pages/sidenav.scss";
 @import "pages/stages.scss";
+@import "pages/project.scss";
+@import "pages/tech.scss";
 
 @import "elements/buttons.scss";
 @import "elements/logos.scss";
@@ -19,9 +21,9 @@ body {
   font-family: 'Roboto Mono', monospace;
 }
 
-a:-webkit-any-link {
-  color: white;
-}
+// a:-webkit-any-link {
+//   color: black;
+// }
 
 .app-container {
   display: flex;

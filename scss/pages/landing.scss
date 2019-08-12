@@ -12,7 +12,7 @@
       flex-direction: column;
 
       h3 {
-        width: 360px;
+       width: 360px;
        text-align: center;
       }
     }
@@ -20,10 +20,16 @@
   
 #landing-header {
     display: flex;
-    width: 35%;
+    flex-direction: column;
+    width: 50%;
     height: 15%;
     font-size: 2em;
     align-items: center;
+    justify-content: center;
+
+    @include only(1100px){
+      margin-top: 25vh;
+    }
 
     @include respond(1150px){
 
@@ -38,6 +44,7 @@
 
        >img {
           margin-left: 0;
+          
        }
        
     }
@@ -73,12 +80,51 @@
   }
 }
 
-#landing-header img {
-  height: 4em;
-  margin-left: auto;
-}
 
 #landing-btn {
   margin-top: 3vh;
   text-decoration: none;
+}
+
+.landing-item {
+  margin: 2vh;
+  // align-self: center;
+
+}
+
+#landing-githubs {
+  display: flex;
+  flex-direction: column;
+}
+
+.landing-text {
+  background-color: white;
+  border: 1px solid black;
+}
+
+.landing-title {
+
+  font-size: 3rem;
+
+  @include respond(500px){
+    font-size: 1.3rem;
+  }
+}
+
+.landing-photo {
+  margin-top: 2vh;
+  width: 30vw;
+
+  @include respond(500px){
+    width: 70vw;
+  }
+}
+
+.landing-about-me {
+  visibility: hidden;
+
+  @include respond(500px){
+    visibility: visible;
+    margin-bottom: 2vh;
+  }
 }

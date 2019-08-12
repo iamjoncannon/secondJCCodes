@@ -1,7 +1,8 @@
-#github-logo {
+#logo {
   padding-top: 2vh;
   height: 6vh;
   margin-right: 3vw;
+  color: white;
 
   @include respond(12450px){
     padding-left: 0;
@@ -11,27 +12,6 @@
     font-size: 1.5em;
     margin-left: 2vw;
   }
-}
-
-#npm-logo {
-  padding-top: 2.5vh;
-  height: 6vh;
-  margin-right: 1.5vw;
-
-  @include respond(1150px){
-    padding-top: .75em;
-    font-size: 1.5em;
-    margin-left: 2vw;
-  }
-
-  @include respond(340px){
-    padding-top: .5em;
-  }
-}
-
-#genie-logo {
-  padding-left: 1em;
-  height: 6vh;
 }
 
 .code-background {
@@ -48,4 +28,8 @@ code {
       overflow-wrap: break-word;
     }
   }
+}
+
+.default-theme .repo-card .header strong a {
+  margin-left: 20%;
 }
