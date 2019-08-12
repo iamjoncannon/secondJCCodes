@@ -10,8 +10,8 @@ export default class Navbar extends Component {
 
         <Link className="nav-link" to="/" style={{ textDecoration: 'none' }}>
 
-          <div id="nav-fader" />
           <h1><span className="nav-desktop"> 🖖</span> joncannon.codes <span className="nav-desktop"> 🖖</span></h1>
+          <div id="nav-fader" />
         </Link>
 
         </div>

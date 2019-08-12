@@ -268,13 +268,13 @@ input:valid {
   position: fixed;
   top: 0;
   z-index: 1; }
+  .nav h1 {
+    margin-left: 3vw;
+    font-weight: 100;
+    z-index: 20; }
   @media (max-width: 340px) {
     .nav {
       width: 100vw; } }
-
-.nav h1 {
-  margin-left: 3vw;
-  font-weight: 100; }
 
 .nav-link {
   color: white;
@@ -311,14 +311,7 @@ input:valid {
   border-radius: 100%;
   background-color: white;
   opacity: 0.3;
-  -webkit-filter: blur(20px);
-  z-index: 1; }
-  @media (min-width: 1150px) {
-    #nav-fader:hover {
-      background-color: black;
-      border-radius: 100%;
-      -webkit-filter: blur(20px);
-      opacity: .3; } }
+  -webkit-filter: blur(20px); }
   @media (min-width: 500px) {
     #nav-fader {
       left: 1vh;
