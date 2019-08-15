@@ -78,9 +78,9 @@
   &:hover{
     @include only(1150px){
 
-      // background-color: black;
-      // border-radius: 100%;
-      // -webkit-filter: blur(20px);
+      background-color: black;
+      border-radius: 100%;
+      -webkit-filter: blur(20px);
       // opacity: .3;
     }
   }

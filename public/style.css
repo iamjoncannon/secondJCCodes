@@ -312,6 +312,11 @@ input:valid {
   background-color: white;
   opacity: 0.3;
   -webkit-filter: blur(20px); }
+  @media (min-width: 1150px) {
+    #nav-fader:hover {
+      background-color: black;
+      border-radius: 100%;
+      -webkit-filter: blur(20px); } }
   @media (min-width: 500px) {
     #nav-fader {
       left: 1vh;

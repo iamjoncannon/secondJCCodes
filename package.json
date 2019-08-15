@@ -12,7 +12,8 @@
     "dep-nginx": "chmod +x ./deploy/nginxConfig && ./deploy/nginxConfig",
     "deploy": "addy=$addy key=$key pm2 deploy ecosystem.config.js production",
     "site": "open http://$addy",
-    "sass": "node-sass scss/main.scss public/style.css -w"
+    "sass": "node-sass scss/main.scss public/style.css -w",
+    "sass-bund": "node-sass scss/main.scss public/style.css -w"
   },
   "keywords": [],
   "author": "",

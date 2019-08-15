@@ -13,6 +13,16 @@
         
     },
     {
+        "id": "Maple",
+        "desc": "React Native iPad dashboard tool that helps teachers organize social emotional learning in the classroom. My contribution: bootstrapped React Native project and completed dependency installation and collaboration workflow with team member. Translated UX wireframes and visual design into React Native style API. Helped design total application structure. Pair programmed with team member.",
+        "GH_url": "https://github.com/iamjoncannon/EverGrow",
+        "Technologies": "React Native, XCode, Sketch",
+        "other_fields": [
+            {"Walkthrough of iPad app": "https://github.com/iamjoncannon/EverGrow/blob/master/walkthrough.mov?raw=true"
+            }
+        ]
+    },
+    {
         "id": "Golang Stock Portfolio App",
         "desc": "React fullstack application that displays portfolio and stock prices in real time. Backend api in Golang, using PostgreSQL and Redis caching. Stateless authentication with JSON Web Tokens. Simulated “ACID” trade SQL transaction with prepared statements.",
         "GH_url": "https://github.com/iamjoncannon/StockApp",
@@ -30,16 +40,6 @@
         "Technologies": "Node, Ableton Live, Max/MSP",
         "other_fields": [
             
-        ]
-    },
-    {
-        "id": "Maple",
-        "desc": "React Native iPad dashboard tool that helps teachers organize social emotional learning in the classroom. My contribution: bootstrapped React Native project and completed dependency installation and collaboration workflow with team member. Translated UX wireframes and visual design into React Native style API. Helped design total application structure. Pair programmed with team member.",
-        "GH_url": "https://github.com/iamjoncannon/EverGrow",
-        "Technologies": "React Native, XCode, Sketch",
-        "other_fields": [
-            {"Walkthrough of iPad app": "https://github.com/iamjoncannon/EverGrow"
-            }
         ]
     },
     {
@@ -72,9 +72,9 @@
     },
     {
         "id": "This Site- joncannon.codes",
-        "desc": "React/SASS application, deployed to EC2.",
+        "desc": "React/SASS application, static deployed to an S3.",
         "GH_url": "https://github.com/iamjoncannon/secondJCCodes.git",
-        "Technologies": "React, SASS, AWS (EC2, S3), MongoDB",
+        "Technologies": "React, React Router, SASS, AWS (S3)",
         "other_fields": [
           
         ]
